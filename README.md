@@ -16,11 +16,14 @@ open your GraphQL IDE like GraphQL Playground
 
 ## Query sample
 ```
-query{
-  teams{
+query {
+  teams {
     idTeam
     strTeam
-    intFormedYear
+    players{
+      idTeam
+      strPlayer
+    }
   }
 }
 
